@@ -44,7 +44,7 @@ export default {
 
 <style lang="scss" scoped>
 .appointmentOverview {
-  height: 100vh;
+  height: 60vh;
   background-color: rgb(84, 166, 194);
 }
 </style>

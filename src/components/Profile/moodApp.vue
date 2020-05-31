@@ -15,7 +15,7 @@
 
 <style lang="scss" scoped>
 .moodApp {
-    height: 450px;
+    height: 60vh;
     background-color: rgb(114, 139, 221);
 }
 </style>

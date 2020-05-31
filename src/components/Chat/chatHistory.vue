@@ -1,12 +1,23 @@
 <template>
     <div class="chatHistory">
-        <h1>
-            Chat History
-        </h1>
+        <v-card
+    class="mx-auto"
+    max-width="400"
+    tile
+  >
+    <v-list-item>
+      <v-list-item-content>
+        <v-list-item-title>Chat History</v-list-item-title>
+      </v-list-item-content>
+    </v-list-item>
 
-        <h3>
-            list of call history
-        </h3>
+    <v-list-item two-line>
+      <v-list-item-content>
+        <v-list-item-title>Doctor One</v-list-item-title>
+        <v-list-item-subtitle>Do a v-for to get Call History here</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item>
+  </v-card>
     </div>
 </template>
 

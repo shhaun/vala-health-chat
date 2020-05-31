@@ -59,6 +59,7 @@ export default {
 
 <style lang="scss" scoped>
 .bookAppointment {
+  height: 60vh;
   background-color: lightblue;
 }
 </style>

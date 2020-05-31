@@ -1,6 +1,5 @@
 <template>
     <div class="settingsApp">
-        <h2>Display name instead of Nickname </h2>
          <v-btn depressed color="primary" dark>Primary</v-btn>
          <v-btn depressed color="primary" dark>Contact Settings</v-btn>
           <v-btn depressed color="primary" dark>Privacy Settings</v-btn>
@@ -18,7 +17,7 @@
 
 <style lang="scss" scoped>
 .settingsApp {
-    height: 450px;
+    height: 60vh;
     background-color: rgb(75, 99, 179);
 }
 

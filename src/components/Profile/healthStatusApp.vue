@@ -14,5 +14,7 @@ export default {
 
 <style lang="scss" scoped>
 .healthStatusApp {
-    background-color: lightblue;
-}</style>
+  height: 60vh;
+  background-color: lightblue;
+}
+</style>
