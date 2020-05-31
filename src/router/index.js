@@ -20,6 +20,10 @@ import aboutTherapists from "@/components/About/aboutTherapists.vue";
 import aboutVala from "@/components/About/aboutVala.vue";
 import quickSetup from "@/components/About/quickSetup.vue";
 
+// Chat Nested - Components
+import chatApp from '@/components/Chat/chatApp.vue';
+import chatHistory from '@/components/Chat/chatHistory.vue';
+
 // Therapy Components 
 import appointmentOverview from "@/components/Therapy/appointmentOverview.vue";
 import bookAppointments from "@/components/Therapy/bookAppointments.vue";
@@ -112,6 +116,18 @@ const routes = [
     path: "/chat",
     name: "Chat",
     component: Chat,
+    children: [
+      {
+        path: "/chatApp",
+        component: chatApp,
+      },
+      {
+        path: "/chatHistory",
+        component: chatHistory,
+      },
+     
+     
+    ],
   },
 ];
 

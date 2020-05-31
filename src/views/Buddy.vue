@@ -1,19 +1,23 @@
 <template>
-  <div>
-    <h1>Buddy App</h1>
-    <h3>buddy text</h3>
-        <h1>
-      Profile Page
-    </h1>
-    <h3>
-      Banner
-    </h3>
+  <v-container>
+    <div class="buddyApp">
+      <h1>Buddy App</h1>
+      <h3>
+        Different images for Buddy here
+      </h3>
+    </div>
     <router-view></router-view>
-  </div>
+  </v-container>
 </template>
 
 <script>
 export default {};
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.buddyApp {
+  color: white;
+  background-color: black;
+  height: 480px;
+}
+</style>

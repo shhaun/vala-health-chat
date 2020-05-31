@@ -5,7 +5,12 @@
 
     <h3>Chat Messages</h3>
     <h4>Text Chat</h4>
+
+    <router-link to="/chatApp"> <button>Chat</button></router-link>
+     <router-link to="/chatHistory"> <button>Chat History</button></router-link>
+  <router-view></router-view>
   </div>
+  
 </template>
 
 <script>
