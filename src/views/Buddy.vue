@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Buddy App</h1>
-    <h3>CHeese</h3>
+    <h3>buddy text</h3>
   </div>
 </template>
 

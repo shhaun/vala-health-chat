@@ -6,17 +6,15 @@
     <h3>
       Banner
     </h3>
-    <settingsApp />
+    <button>Settings</button>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import settingsApp from "@/components/Profile/settingsApp.vue";
-
 export default {
   components: {
-    settingsApp
-  }
-  
+
+  },
 };
 </script>

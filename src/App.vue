@@ -3,7 +3,9 @@
     <v-content>
        <router-view/>
     </v-content>
-    <bottomMenu/>
+    <div>
+      <bottomMenu/>
+    </div>
   </div>
 </template>
 
