@@ -1,5 +1,12 @@
 <template>
   <div class="appointmentOverview">
+    <div id="calendar">
+      <h1>CALENDAR</h1>
+            <v-img
+      src="https://media.mnn.com/assets/images/2018/08/CollectionOfCloudsAgainstABlueSky.jpg.653x0_q80_crop-smart.jpg"
+      height="100px" width="100%"
+    ></v-img>
+    </div>
     <v-card class="pa-02" max-width="344" outlined dark>
       <v-list-item three-line>
         <v-list-item-content>
@@ -18,21 +25,11 @@
       </v-card-text>
 
       <v-card-actions>
-        <v-btn text>Download PDF</v-btn>
+        <v-b
+        tn text>Download PDF</v-b>
       </v-card-actions>
     </v-card>
-    <v-card class="pa-02" max-width="344" outlined light>
-      <v-list-item three-line>
-        <v-list-item-content>
-          <v-list-item-title class="headline mb-1"
-            >Appointment Overview</v-list-item-title
-          >
-        </v-list-item-content>
-      </v-list-item>
-      <v-card-text>
-        ‣ Paraclinical Studies
-      </v-card-text>
-    </v-card>
+   
   </div>
 </template>
 
@@ -46,5 +43,11 @@ export default {
 .appointmentOverview {
   height: 60vh;
   background-color: rgb(84, 166, 194);
+  padding: 5px 0 0 35px;
+}
+#calendar{
+  height: 100px;
+  width: 100%;
+  margin: 10px 0 100px -20px;
 }
 </style>

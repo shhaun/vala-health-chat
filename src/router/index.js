@@ -12,7 +12,6 @@ import Chat from "../views/Chat.vue";
 
 import settingsApp from "@/components/Profile/settingsApp.vue";
 import healthStatusApp from "@/components/Profile/healthStatusApp.vue";
-import moodApp from "@/components/Profile/moodApp.vue";
 
 // About Nested- Components
 import aboutDevelopers from "@/components/About/aboutDevelopers.vue";
@@ -21,10 +20,10 @@ import aboutVala from "@/components/About/aboutVala.vue";
 import quickSetup from "@/components/About/quickSetup.vue";
 
 // Chat Nested - Components
-import chatApp from '@/components/Chat/chatApp.vue';
-import chatHistory from '@/components/Chat/chatHistory.vue';
+import chatApp from "@/components/Chat/chatApp.vue";
+import chatHistory from "@/components/Chat/chatHistory.vue";
 
-// Therapy Components 
+// Therapy Components
 import appointmentOverview from "@/components/Therapy/appointmentOverview.vue";
 import bookAppointments from "@/components/Therapy/bookAppointments.vue";
 
@@ -51,12 +50,6 @@ const routes = [
         // when /user/:id/profile is matched
         path: "/",
         component: healthStatusApp,
-      },
-      {
-        // UserProfile will be rendered inside User's <router-view>
-        // when /user/:id/profile is matched
-        path: "/moodApp",
-        component: moodApp,
       },
     ],
   },
@@ -125,8 +118,6 @@ const routes = [
         path: "/chatHistory",
         component: chatHistory,
       },
-     
-     
     ],
   },
 ];

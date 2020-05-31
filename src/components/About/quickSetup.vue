@@ -1,15 +1,13 @@
 <template>
-    <div class="quickSetup"> 
-        <h1>
-            Quick Setup
-        </h1>
-    </div>
+  <div class="quickSetup">
+    <h1>
+      Quick Setup
+    </h1>
+  </div>
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {};
 </script>
 
 <style lang="scss" scoped>

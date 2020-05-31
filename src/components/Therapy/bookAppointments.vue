@@ -1,5 +1,6 @@
 <template>
   <div class="bookAppointment">
+    <div class="space">
     <v-btn depressed color="primary" dark>Choose Doctor</v-btn>
     <div>
       <v-col v-for="(item, i) in items" :key="i" cols="12">
@@ -18,8 +19,9 @@
         </v-card>
       </v-col>
     </div>
-
+  </div>
     <v-btn depressed color="primary" dark>REason For Appointment</v-btn>
+    <div class="space-2">
     <v-card class="pa-02" max-width="344" outlined light>
       <v-list-item three-line>
         <v-list-item-content>
@@ -36,7 +38,7 @@
         shows sinus rhythm frequency 96, QTc 437 ms., Normal ECG.
       </v-card-text>
     </v-card>
-
+  </div>
     <v-btn depressed color="primary" dark>Add to Journal</v-btn>
   </div>
 </template>
@@ -61,5 +63,11 @@ export default {
 .bookAppointment {
   height: 60vh;
   background-color: lightblue;
+}
+.space{
+  margin: 30px 0 0 0;
+}
+.space-2{
+  margin: 5px 0 5px 30px;
 }
 </style>

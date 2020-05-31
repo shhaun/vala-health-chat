@@ -1,15 +1,13 @@
 <template>
-    <div class="aboutVala">
-        <h1>
-            About Vala Health Chat
-        </h1>
-    </div>
+  <div class="aboutVala">
+    <h1>
+      About Vala Health Chat
+    </h1>
+  </div>
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {};
 </script>
 
 <style lang="scss" scoped>
