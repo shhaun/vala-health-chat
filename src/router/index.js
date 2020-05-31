@@ -73,7 +73,7 @@ const routes = [
       {
         // UserProfile will be rendered inside User's <router-view>
         // when /user/:id/profile is matched
-        path: "/appointmentOverview",
+        path: "/therapy",
         component: appointmentOverview,
       },
       {
@@ -95,7 +95,7 @@ const routes = [
     component: About,
     children: [
       {
-        path: "/aboutDevelopers",
+        path: "/about",
         component: aboutDevelopers,
       },
       {
@@ -118,7 +118,7 @@ const routes = [
     component: Chat,
     children: [
       {
-        path: "/chatApp",
+        path: "/chat",
         component: chatApp,
       },
       {

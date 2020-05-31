@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <v-content>
+    <v-content class="homeView">
        <router-view/>
     </v-content>
     <div>
@@ -22,6 +22,9 @@ export default {
 </script>
 
 <style lang="scss">
+.homeView {
+  height: calc(100vh - 75px);
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -1,13 +1,14 @@
 <template>
-  <div>
-    <div id="therapyApp">
+  <div class="therapyApp">
+    <div >
       <h1>Therapy Page</h1>
-      <h3>
-        Calendar App
-      </h3>
-    </div>
 
-    <router-link to="/appointmentOverview"> <button>Appointment Overview</button></router-link>
+      <h4>Logo</h4>
+    </div>
+    <h3>
+        Calendar App
+    </h3>
+    <router-link to="/therapy"> <button>Appointment Overview</button></router-link>
     <router-link to="/bookAppointments">
       <button>Book Appointments</button></router-link
     >
@@ -20,7 +21,8 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-#therapyApp {
-  background-color: rgb(101, 101, 201);
-  height:  100px;
-}</style>
+.therapyApp {
+  height: 100vh;
+}
+
+</style>

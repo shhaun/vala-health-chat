@@ -4,7 +4,7 @@
       About Page
     </h1>
     <div class="aboutPageNav">
-      <router-link to="/aboutDevelopers">
+      <router-link to="/about">
         <button>About Developers</button></router-link
       >
       <router-link to="/aboutTherapists">
