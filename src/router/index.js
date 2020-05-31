@@ -1,105 +1,108 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Vue from "vue";
+import VueRouter from "vue-router";
+import Home from "../views/Home.vue";
 
 // Pages
-import Therapy from '../views/Therapy.vue'
-import Buddy from '../views/Buddy.vue'
-import About from '../views/About.vue'
-import Chat from '../views/Chat.vue'
-import Appointments from '@/components/Therapists/Appointments.vue';
+import Therapy from "../views/Therapy.vue";
+import Buddy from "../views/Buddy.vue";
+import About from "../views/About.vue";
+import Chat from "../views/Chat.vue";
+import Appointments from "@/components/Therapists/Appointments.vue";
 
 // Nested Components Apps
-import appointmentOverview from '@/components/Therapists/bookAppointment.vue';
-import bookAppointment from '@/components/Therapists/bookAppointment.vue';
-import settingsApp from '@/components/Profile/settingsApp.vue';
-import healthStatusApp from '@/components/Profile/healthStatusApp.vue';
-
+import appointmentOverview from "@/components/Therapists/bookAppointment.vue";
+import bookAppointment from "@/components/Therapists/bookAppointment.vue";
+import settingsApp from "@/components/Profile/settingsApp.vue";
+import healthStatusApp from "@/components/Profile/healthStatusApp.vue";
+import moodApp from "@/components/Profile/moodApp.vue";
 
 // Vue-Router
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
-  const routes = [
+const routes = [
   {
-    path: '/',
-    name: 'home',
+    path: "/",
+    name: "home",
     component: Home,
     children: [
       {
         // UserProfile will be rendered inside User's <router-view>
         // when /user/:id/profile is matched
-        path: '/',
+        path: "/settingsApp",
         components: {
           default: settingsApp,
-          helper: settingsApp
-        }
-      },  
+          helper: settingsApp,
+        },
+      },
       {
         // UserProfile will be rendered inside User's <router-view>
         // when /user/:id/profile is matched
-        path: '/healthStatusApp',
-        component: healthStatusApp
+        path: "/",
+        component: healthStatusApp,
       },
-      
-    ]
-    
+      {
+        // UserProfile will be rendered inside User's <router-view>
+        // when /user/:id/profile is matched
+        path: "/moodApp",
+        component: moodApp,
+      },
+    ],
   },
   {
-    path: '/buddy',
-    name: 'Buddy',
-    component: Buddy
+    path: "/buddy",
+    name: "Buddy",
+    component: Buddy,
   },
   {
-    path: '/therapy',
-    name: 'Therapy',
+    path: "/therapy",
+    name: "Therapy",
     component: Therapy,
     children: [
       {
         // UserProfile will be rendered inside User's <router-view>
         // when /user/:id/profile is matched
-        path: '/',
-        component: appointmentOverview
+        path: "/",
+        component: appointmentOverview,
       },
       {
         // UserProfile will be rendered inside User's <router-view>
         // when /user/:id/profile is matched
-        path: '/bookAppointment',
-        component: bookAppointment
+        path: "/bookAppointment",
+        component: bookAppointment,
       },
-   
-    ]
+    ],
   },
   {
-    path: '/buddy',
-    name: 'Buddy',
-    component: Buddy
+    path: "/buddy",
+    name: "Buddy",
+    component: Buddy,
   },
   {
-    path: '/about',
-    name: 'About',
-    component: About
+    path: "/about",
+    name: "About",
+    component: About,
   },
   {
-    path: '/chat',
-    name: 'Chat',
-    component: Chat
+    path: "/chat",
+    name: "Chat",
+    component: Chat,
   },
   {
-    path: '/appointments',
-    name: 'Appointments',
-    component: Appointments
-  }  ,
+    path: "/appointments",
+    name: "Appointments",
+    component: Appointments,
+  },
   {
-    path: '/bookAppointment',
-    name: 'BookAppointment',
-    component: bookAppointment
-  }
-]
+    path: "/bookAppointment",
+    name: "BookAppointment",
+    component: bookAppointment,
+  },
+];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
