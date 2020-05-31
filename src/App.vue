@@ -1,24 +1,25 @@
 <template>
   <div id="app">
     <v-content class="homeView">
-       <router-view/>
+      <router-view />
     </v-content>
-    <div>
-      <bottomMenu/>
-    </div>
+    <v-footer app padless>
+      <bottomMenu />
+    </v-footer> 
+    
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import bottomMenu from '@/components/ui/navApp.vue'
+import bottomMenu from "@/components/ui/navApp.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    bottomMenu
-  }
-}
+    bottomMenu,
+  },
+};
 </script>
 
 <style lang="scss">
@@ -32,6 +33,4 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-
-
 </style>

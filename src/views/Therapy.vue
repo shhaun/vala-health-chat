@@ -1,28 +1,22 @@
 <template>
   <div class="therapyApp">
-    <div >
-      <h1>Therapy Page</h1>
-
-      <h4>Logo</h4>
-    </div>
-    <h3>
-        Calendar App
-    </h3>
-    <router-link to="/therapy"> <button>Appointment Overview</button></router-link>
-    <router-link to="/bookAppointments">
-      <button>Book Appointments</button></router-link
-    >
+    <calendarApp />
+    <v-btn depressed color="primary" dark to="/therapy">Abppointment Overview</v-btn>
+    <v-btn depressed color="primary" dark to="/bookAppointments">Book Appointments</v-btn>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-export default {};
+import calendarApp from '@/components/Therapy/calendarApp.vue';
+
+export default {
+    components: {
+      calendarApp
+    },
+};
 </script>
 
 <style lang="scss" scoped>
-.therapyApp {
-  height: 100vh;
-}
 
 </style>

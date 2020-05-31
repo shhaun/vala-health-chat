@@ -11,5 +11,9 @@
 </script>
 
 <style lang="scss" scoped>
-
+    .calendarApp {
+        color: white;
+        height: 20vh;
+        background-color: blue  ;
+    }
 </style>

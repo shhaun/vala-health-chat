@@ -30,8 +30,7 @@
         </v-list-item-content>
       </v-list-item>
       <v-card-text>
-        ‣ ECG and blood tests on 20.05.2020 show normal baseline values . ‣ ECG
-        shows sinus rhythm frequency 96, QTc 437 ms., Normal ECG.
+        ‣ Paraclinical Studies
       </v-card-text>
     </v-card>
   </div>
@@ -45,7 +44,7 @@ export default {
 
 <style lang="scss" scoped>
 .appointmentOverview {
-  height: 450px;
+  height: 100vh;
   background-color: rgb(84, 166, 194);
 }
 </style>

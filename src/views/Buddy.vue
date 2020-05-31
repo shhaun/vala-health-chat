@@ -18,6 +18,5 @@ export default {};
 .buddyApp {
   color: white;
   background-color: black;
-  height: 480px;
 }
 </style>
