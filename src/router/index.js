@@ -7,14 +7,22 @@ import Therapy from "../views/Therapy.vue";
 import Buddy from "../views/Buddy.vue";
 import About from "../views/About.vue";
 import Chat from "../views/Chat.vue";
-import Appointments from "@/components/Therapists/Appointments.vue";
 
 // Nested Components Apps
-import appointmentOverview from "@/components/Therapists/bookAppointment.vue";
-import bookAppointment from "@/components/Therapists/bookAppointment.vue";
+
 import settingsApp from "@/components/Profile/settingsApp.vue";
 import healthStatusApp from "@/components/Profile/healthStatusApp.vue";
 import moodApp from "@/components/Profile/moodApp.vue";
+
+// About Nested- Components
+import aboutDevelopers from "@/components/About/aboutDevelopers.vue";
+import aboutTherapists from "@/components/About/aboutTherapists.vue";
+import aboutVala from "@/components/About/aboutVala.vue";
+import quickSetup from "@/components/About/quickSetup.vue";
+
+// Therapy Components 
+import appointmentOverview from "@/components/Therapy/appointmentOverview.vue";
+import bookAppointments from "@/components/Therapy/bookAppointments.vue";
 
 // Vue-Router
 Vue.use(VueRouter);
@@ -61,14 +69,14 @@ const routes = [
       {
         // UserProfile will be rendered inside User's <router-view>
         // when /user/:id/profile is matched
-        path: "/",
+        path: "/appointmentOverview",
         component: appointmentOverview,
       },
       {
         // UserProfile will be rendered inside User's <router-view>
         // when /user/:id/profile is matched
-        path: "/bookAppointment",
-        component: bookAppointment,
+        path: "/bookAppointments",
+        component: bookAppointments,
       },
     ],
   },
@@ -81,21 +89,29 @@ const routes = [
     path: "/about",
     name: "About",
     component: About,
+    children: [
+      {
+        path: "/aboutDevelopers",
+        component: aboutDevelopers,
+      },
+      {
+        path: "/aboutTherapists",
+        component: aboutTherapists,
+      },
+      {
+        path: "/aboutVala",
+        component: aboutVala,
+      },
+      {
+        path: "/quickSetup",
+        component: quickSetup,
+      },
+    ],
   },
   {
     path: "/chat",
     name: "Chat",
     component: Chat,
-  },
-  {
-    path: "/appointments",
-    name: "Appointments",
-    component: Appointments,
-  },
-  {
-    path: "/bookAppointment",
-    name: "BookAppointment",
-    component: bookAppointment,
   },
 ];
 

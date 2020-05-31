@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="chatApp">
     <h1>Chat App</h1>
     <h3>Doctors Profile Image and audio/ video options</h3>
 

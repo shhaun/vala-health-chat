@@ -14,5 +14,9 @@
 </script>
 
 <style lang="scss" scoped>
+.bookAppointment {
+    height: 450px;
+    background-color: lightblue;
+}
 
 </style>

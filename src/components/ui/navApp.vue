@@ -1,11 +1,10 @@
 <template>
-  <div>
-    <h1>Bottom Navigation</h1>
-    <router-link to="/therapy" tag="button">Therapy</router-link>
-    <router-link to="/chat" tag="button">Chat</router-link>
-    <router-link to="/" tag="button">Profile</router-link>
-    <router-link to="/buddy" tag="button">Buddy</router-link>
-    <router-link to="/about" tag="button">About</router-link>
+  <div class="bottomNav">
+     <v-btn depressed color="primary" dark to="/therapy">Therapy</v-btn>
+     <v-btn depressed color="primary" dark to="/chat">Chat</v-btn>
+     <v-btn depressed color="primary" dark to="/">Profile</v-btn>
+     <v-btn depressed color="primary" dark to="/Buddy">Buddy</v-btn>
+     <v-btn depressed color="primary" dark to="/About">About</v-btn>
   </div>
 </template>
 
@@ -13,4 +12,8 @@
 export default {};
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.bottomNav {
+  width: 100%;
+  background-color: rgb(56, 155, 189);
+}</style>

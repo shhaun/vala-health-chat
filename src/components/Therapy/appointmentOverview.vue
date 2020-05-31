@@ -1,5 +1,5 @@
 <template>
-    <div class="Appointments">
+    <div class="appointmentOverview">
         <h1>Clinic Contract</h1>
         <h3>Description of Clinic Appointment</h3>
 
@@ -9,10 +9,13 @@
 
 <script>
     export default {
-        name: 'Appointments'
+        name: 'appointmentOVerview'
     }
 </script>
 
 <style lang="scss" scoped>
-
+.appointmentOverview {
+    height: 450px;
+    background-color: rgb(84, 166, 194);
+}
 </style>

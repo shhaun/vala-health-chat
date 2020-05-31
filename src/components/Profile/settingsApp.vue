@@ -1,11 +1,12 @@
 <template>
     <div class="settingsApp">
-        <h2>Dark Mode</h2>
-        <h2>Privacy Settings</h2>
         <h2>Display name instead of Nickname </h2>
-        <h2>Contact Settings</h2>
-        <h2>Themes</h2>
-        <button>Dark Mode </button>
+         <v-btn depressed color="primary" dark>Primary</v-btn>
+         <v-btn depressed color="primary" dark>Contact Settings</v-btn>
+          <v-btn depressed color="primary" dark>Privacy Settings</v-btn>
+         <v-btn depressed color="primary" dark>Themes</v-btn>
+         <v-btn depressed color="primary" dark>Primary</v-btn>
+         <v-btn depressed color="primary" dark>Dark Mode</v-btn>
     </div>
 </template>
 
@@ -16,5 +17,9 @@
 </script>
 
 <style lang="scss" scoped>
+.settingsApp {
+    height: 450px;
+    background-color: rgb(75, 99, 179);
+}
 
 </style>
