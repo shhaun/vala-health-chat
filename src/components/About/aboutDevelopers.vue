@@ -7,7 +7,7 @@
       Put a v-card here
     </h3>
     <h4>
-      NExt page
+      Next Page
     </h4>
   </div>
 </template>
@@ -19,7 +19,7 @@ export default {};
 <style lang="scss" scoped>
 .aboutDevelopers {
   color: white;
-  height: 400px;
+  height: 1700px;
   background-color: rgb(84, 84, 204);
 }
 </style>

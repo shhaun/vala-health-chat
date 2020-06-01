@@ -1,11 +1,11 @@
 <template>
-  <div class="bottomNav">
-     <v-btn depressed color="primary" width="75px" rounded small dark to="/therapy">Therapy</v-btn>
-     <v-btn depressed color="primary" width="75px" rounded small dark to="/chat">Chat</v-btn>
-     <v-btn depressed color="primary" width="75px" rounded small dark to="/">Profile</v-btn>
-     <v-btn depressed color="primary" width="75px" rounded small dark to="/Buddy">Buddy</v-btn>
-     <v-btn depressed color="primary" width="75px" rounded small dark to="/About">About</v-btn>
-  </div>
+  <v-bottom-navigation v-model="bottomNav" class="navApp">
+    <v-btn width="75px" to="/therapy">Therapy</v-btn>
+    <v-btn width="75px" to="/chat">Chat</v-btn>
+    <v-btn width="75px" to="/">Profile</v-btn>
+    <v-btn width="75px" to="/Buddy">Buddy</v-btn>
+    <v-btn width="75px" to="/About">About</v-btn>
+  </v-bottom-navigation>
 </template>
 
 <script>
@@ -13,8 +13,8 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-.bottomNav {
-  width: 100%;
+#navApp {
   height: 75px;
-  background-color: rgb(56, 155, 189);
-}</style>
+  position: fixed;
+}
+</style>

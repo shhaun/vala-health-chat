@@ -3,7 +3,7 @@
     <v-content class="homeView">
       <router-view />
     </v-content>
-    <v-footer app padless>
+    <v-footer padless app>
       <bottomMenu />
     </v-footer> 
     
@@ -32,6 +32,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  background-color: lightgrey;
 }
 </style>
