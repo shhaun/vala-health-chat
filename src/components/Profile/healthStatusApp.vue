@@ -36,7 +36,7 @@ export default {
   height: 35vh;
   width: 98%;
   margin: 0 0 0 1%;
-  background: #fab27a;
+  background: #6899af;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
