@@ -35,7 +35,7 @@ export default {
 
 <style lang="scss" scoped>
 .healthStatusApp {
-  height: 80vh;
+  height: 64vh;
   width: 100%;
   background-color: rgb(69, 138, 161);
 }
@@ -49,11 +49,11 @@ export default {
   grid-template-rows: 1fr 1fr;
 }
 #upcoming-appointments {
-  height: 19vh;
+  height: 10vh;
   width: 80%;
   margin-left: 10%;
   border-radius: 25px;
-  box-shadow: 0 5px 5px 0 #fff;
+  box-shadow: 0 5px 5px 0 violet;
   margin-top: 1vh;
   background: violet;
   justify-content: center;

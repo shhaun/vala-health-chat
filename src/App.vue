@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <v-content class="homeView">
+    <v-content class="mainPage">
       <router-view />
     </v-content>
     <v-footer padless app>
@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style lang="scss">
-.homeView {
+.mainPage {
   height: calc(100vh - 75px);
 }
 #app {

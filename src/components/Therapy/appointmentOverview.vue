@@ -18,7 +18,6 @@ export default {
 .appointmentOverview {
   height: 85vh;
   background-color: rgb(84, 166, 194);
-  
 }
 
 
