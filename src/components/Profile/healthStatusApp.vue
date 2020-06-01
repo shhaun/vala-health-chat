@@ -1,5 +1,6 @@
 <template>
   <div class="healthStatusApp">
+<<<<<<< Updated upstream
     <div id="stats">
       <div id="left-info">
         <!-- slider -->
@@ -18,6 +19,9 @@
     </div>
     <!-- info on the bottom with appointments -->
     <div id="upcoming-appointments"><p>HERE YOU CAN SEE YOUR UPCOMING APPOINTMENTS</p></div>
+=======
+    <h1>Home</h1>
+>>>>>>> Stashed changes
   </div>
 </template>
 
@@ -29,6 +33,7 @@ export default {
 
 <style lang="scss" scoped>
 .healthStatusApp {
+<<<<<<< Updated upstream
   height: 60vh;
   background-color: lightblue;
 }
@@ -93,4 +98,14 @@ export default {
   padding: 35px 0 0 10px;
 }
 
+=======
+  height: 64vh;
+  width: 100%;
+  background-color: rgb(69, 138, 161);
+  color: #fff;
+  padding: 40px 0 0 0;
+  font-family: 'Cairo', sans-serif;
+  text-align: center;
+}
+>>>>>>> Stashed changes
 </style>

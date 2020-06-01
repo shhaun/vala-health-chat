@@ -14,10 +14,8 @@ import settingsApp from "@/components/Profile/settingsApp.vue";
 import healthStatusApp from "@/components/Profile/healthStatusApp.vue";
 
 // About Nested- Components
-import aboutDevelopers from "@/components/About/aboutDevelopers.vue";
 import aboutTherapists from "@/components/About/aboutTherapists.vue";
 import aboutVala from "@/components/About/aboutVala.vue";
-import quickSetup from "@/components/About/quickSetup.vue";
 
 // Chat Nested - Components
 import chatApp from "@/components/Chat/chatApp.vue";
@@ -88,20 +86,12 @@ const routes = [
     component: About,
     children: [
       {
-        path: "/about",
-        component: aboutDevelopers,
-      },
-      {
         path: "/aboutTherapists",
         component: aboutTherapists,
       },
       {
         path: "/aboutVala",
         component: aboutVala,
-      },
-      {
-        path: "/quickSetup",
-        component: quickSetup,
       },
     ],
   },

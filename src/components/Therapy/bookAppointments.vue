@@ -38,9 +38,14 @@
         shows sinus rhythm frequency 96, QTc 437 ms., Normal ECG.
       </v-card-text>
     </v-card>
+<<<<<<< Updated upstream
   </div>
     <v-btn depressed color="primary" dark>Add to Journal</v-btn>
   </div>
+=======
+  
+  </v-container>
+>>>>>>> Stashed changes
 </template>
 
 <script>
@@ -63,6 +68,7 @@ export default {
 .bookAppointment {
   height: 60vh;
   background-color: lightblue;
+<<<<<<< Updated upstream
 }
 .space{
   margin: 30px 0 0 0;
@@ -70,4 +76,9 @@ export default {
 .space-2{
   margin: 5px 0 5px 30px;
 }
+=======
+  height: 100vh;
+  font-family: 'Cairo', sans-serif;
+}
+>>>>>>> Stashed changes
 </style>

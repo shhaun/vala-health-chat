@@ -1,4 +1,5 @@
 <template>
+<<<<<<< Updated upstream
   <div class="aboutPage">
     <div class="banner"> 
       <v-img  src="https://media.mnn.com/assets/images/2018/08/CollectionOfCloudsAgainstABlueSky.jpg.653x0_q80_crop-smart.jpg" height="100%"></v-img>
@@ -17,34 +18,57 @@
           About Developers
         </button></router-link
       >
+=======
+  <div class="aboutTherapists">
+
+    <div class="about-content">
+      <div id="button-1">
+>>>>>>> Stashed changes
       <router-link to="/aboutTherapists">
-        <button>About Therapists</button></router-link
-      >
-      <router-link to="/aboutVala"> <button>About Vala</button></router-link>
-      <router-link to="/quickSetup"> <button>Quick Setup</button></router-link>
+        <button>Therapists</button></router-link>
+    </div>
+    
+    <div id="button-2">
+      <router-link to="/aboutVala"> <button> Vala</button></router-link>
+      </div>
     </div>
 
-    <router-view></router-view>
+    <router-view />
   </div>
 </template>
 
 <script>
 export default {
-  components: {},
+  
 };
 </script>
 
 <style lang="scss" scoped>
-.banner {
-  height: calc(35vh - 75px);
-  background-color: rgb(255, 255, 255);
+.about-content{
+  background-color: rgb(78, 124, 184);
+  color: rgb(255, 255, 255);
+  height: 70px;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 25px;
+  justify-content: center;
+  display: flex;
+  font-family: 'Cairo', sans-serif;
 }
-.aboutPageNav {
-  height: 5vh;
-  align-content: center;
-  text-decoration: none;
+#button-1{
+  width: 50%;
+  text-align: right;
+  padding-right: 10px;
+  border-right: 1px  solid #fff;
+  padding-top: 15px;
 }
-.aboutPage {
-  height: calc(100vh - 75px);
+#button-2{
+  width: 50%;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+a {
+  text-decoration: none !important;
 }
 </style>

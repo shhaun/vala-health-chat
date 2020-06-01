@@ -1,5 +1,6 @@
 <template>
   <div class="appointmentOverview">
+<<<<<<< Updated upstream
     <div id="calendar">
       <h1>CALENDAR</h1>
             <v-img
@@ -30,6 +31,11 @@
       </v-card-actions>
     </v-card>
    
+=======
+    
+    <calendarApp></calendarApp>
+  
+>>>>>>> Stashed changes
   </div>
 </template>
 
@@ -37,11 +43,18 @@
 export default {
   name: "appointmentOVerview",
 };
+
 </script>
 
 <style lang="scss" scoped>
 .appointmentOverview {
+<<<<<<< Updated upstream
   height: 60vh;
+=======
+  height: 90vh;
+  border-radius: 50px;
+  margin: 10px 0 0px 0;
+>>>>>>> Stashed changes
   background-color: rgb(84, 166, 194);
   padding: 5px 0 0 35px;
 }
