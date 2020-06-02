@@ -27,105 +27,117 @@ import chatHistory from "@/components/Chat/chatHistory.vue";
 import appointmentOverview from "@/components/Therapy/appointmentOverview.vue";
 import bookAppointments from "@/components/Therapy/bookAppointments.vue";
 
+import buddyApp from "@/components/Buddy/buddyApp.vue";
+import buddySettings from '@/components/Buddy/buddySettings.vue';
+
 // Vue-Router
 Vue.use(VueRouter);
 
 const routes = [
-  {
-    path: "/",
-    name: "home",
-    component: Home,
-    children: [
-      {
-        // UserProfile will be rendered inside User's <router-view>
-        // when /user/:id/profile is matched
-        path: "/settingsApp",
-        components: {
-          default: settingsApp,
-          helper: settingsApp,
-        },
-      },
-      {
-        // UserProfile will be rendered inside User's <router-view>
-        // when /user/:id/profile is matched
+    {
         path: "/",
-        component: healthStatusApp,
-      },
-    ],
-  },
-  {
-    path: "/buddy",
-    name: "Buddy",
-    component: Buddy,
-  },
-  {
-    path: "/therapy",
-    name: "Therapy",
-    component: Therapy,
-    children: [
-      {
-        // UserProfile will be rendered inside User's <router-view>
-        // when /user/:id/profile is matched
+        name: "home",
+        component: Home,
+        children: [
+            {
+                // UserProfile will be rendered inside User's <router-view>
+                // when /user/:id/profile is matched
+                path: "/settingsApp",
+                components: {
+                    default: settingsApp,
+                    helper: settingsApp,
+                },
+            },
+            {
+                // UserProfile will be rendered inside User's <router-view>
+                // when /user/:id/profile is matched
+                path: "/",
+                component: healthStatusApp,
+            },
+        ],
+    },
+    {
         path: "/therapy",
-        component: appointmentOverview,
-      },
-      {
-        // UserProfile will be rendered inside User's <router-view>
-        // when /user/:id/profile is matched
-        path: "/bookAppointments",
-        component: bookAppointments,
-      },
-    ],
-  },
-  {
-    path: "/buddy",
-    name: "Buddy",
-    component: Buddy,
-  },
-  {
-    path: "/about",
-    name: "About",
-    component: About,
-    children: [
-      {
+        name: "Therapy",
+        component: Therapy,
+        children: [
+            {
+                // UserProfile will be rendered inside User's <router-view>
+                // when /user/:id/profile is matched
+                path: "/therapy",
+                component: appointmentOverview,
+            },
+            {
+                // UserProfile will be rendered inside User's <router-view>
+                // when /user/:id/profile is matched
+                path: "/bookAppointments",
+                component: bookAppointments,
+            },
+        ],
+    },
+    {
+        path: "/buddy",
+        name: "Buddy",
+        component: Buddy,
+        children: [
+            {
+                // UserProfile will be rendered inside User's <router-view>
+                // when /user/:id/profile is matched
+                path: "/buddy",
+                component: buddyApp,
+            },
+            {
+                // UserProfile will be rendered inside User's <router-view>
+                // when /user/:id/profile is matched
+                path: "/buddySettings",
+                component: buddySettings,
+            },
+        ],
+    },
+    {
         path: "/about",
-        component: aboutDevelopers,
-      },
-      {
-        path: "/aboutTherapists",
-        component: aboutTherapists,
-      },
-      {
-        path: "/aboutVala",
-        component: aboutVala,
-      },
-      {
-        path: "/quickSetup",
-        component: quickSetup,
-      },
-    ],
-  },
-  {
-    path: "/chat",
-    name: "Chat",
-    component: Chat,
-    children: [
-      {
+        name: "About",
+        component: About,
+        children: [
+            {
+                path: "/about",
+                component: aboutDevelopers,
+            },
+            {
+                path: "/aboutTherapists",
+                component: aboutTherapists,
+            },
+            {
+                path: "/aboutVala",
+                component: aboutVala,
+            },
+            {
+                path: "/quickSetup",
+                component: quickSetup,
+            },
+        ],
+    },
+    {
         path: "/chat",
-        component: chatApp,
-      },
-      {
-        path: "/chatHistory",
-        component: chatHistory,
-      },
-    ],
-  },
+        name: "Chat",
+        component: Chat,
+        children: [
+            {
+                path: "/chat",
+                component: chatApp,
+            },
+            {
+                path: "/chatHistory",
+                component: chatHistory,
+            },
+        ],
+    },
 ];
 
 const router = new VueRouter({
-  mode: "history",
-  base: process.env.BASE_URL,
-  routes,
+    mode: "history",
+    base: process.env.BASE_URL,
+    routes,
 });
 
 export default router;

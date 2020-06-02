@@ -1,20 +1,39 @@
 <template>
-  <div class="bottomNav">
-     <v-btn depressed color="primary" width="75px" rounded small dark to="/therapy">Therapy</v-btn>
-     <v-btn depressed color="primary" width="75px" rounded small dark to="/chat">Chat</v-btn>
-     <v-btn depressed color="primary" width="75px" rounded small dark to="/">Profile</v-btn>
-     <v-btn depressed color="primary" width="75px" rounded small dark to="/Buddy">Buddy</v-btn>
-     <v-btn depressed color="primary" width="75px" rounded small dark to="/About">About</v-btn>
-  </div>
+    <v-bottom-navigation
+            v-model="bottomNav"
+    >
+        <v-btn value="nearby" to="/therapy" >
+            <span>Therapy</span>
+            <v-icon>mdi-heart</v-icon>
+        </v-btn>
+
+        <v-btn value="nearby" to="/chat">
+            <span>Chat</span>
+            <v-icon>mdi-heart</v-icon>
+        </v-btn>
+
+        <v-btn value="nearby" to="/">
+            <span>Profile</span>
+            <v-icon>mdi-map-marker</v-icon>
+        </v-btn>
+        <v-btn value="nearby" to="/buddy">
+            <span>Buddy</span>
+            <v-icon>mdi-heart</v-icon>
+        </v-btn>
+        <v-btn value="nearby" to="/About">
+            <span>About</span>
+            <v-icon>mdi-heart</v-icon>
+        </v-btn>
+    </v-bottom-navigation>
 </template>
 
 <script>
-export default {};
+    export default {
+        data() {
+            return {
+                bottomNav: 'recent',
+            }
+        },
+    }
 </script>
 
-<style lang="scss" scoped>
-.bottomNav {
-  width: 100%;
-  height: 75px;
-  background-color: rgb(56, 155, 189);
-}</style>

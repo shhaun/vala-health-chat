@@ -13,7 +13,6 @@ export default {};
 <style lang="scss" scoped>
 .aboutTherapists {
   color: white;
-  height: 400px;
-  background-color: rgb(51, 51, 224);
+  background-color: rgb(84, 84, 204);
 }
 </style>

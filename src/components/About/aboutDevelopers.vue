@@ -3,12 +3,6 @@
     <h1>
       About Developers
     </h1>
-    <h3>
-      Put a v-card here
-    </h3>
-    <h4>
-      NExt page
-    </h4>
   </div>
 </template>
 
@@ -19,7 +13,13 @@ export default {};
 <style lang="scss" scoped>
 .aboutDevelopers {
   color: white;
-  height: 400px;
-  background-color: rgb(84, 84, 204);
+  border-radius: 75px;
 }
+
+  h1 {
+    color: #e0eff2;
+    background: #3a50d9;
+    font: italic bold Georgia, Serif;
+    text-shadow: -4px 3px 0 #3a50d9, -14px 7px 0 #0a0e27;
+  }
 </style>

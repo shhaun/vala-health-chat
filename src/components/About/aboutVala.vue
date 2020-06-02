@@ -13,7 +13,6 @@ export default {};
 <style lang="scss" scoped>
 .aboutVala {
   color: white;
-  height: 400px;
   background-color: rgb(84, 84, 204);
 }
 </style>
