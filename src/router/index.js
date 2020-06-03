@@ -2,13 +2,13 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 
-// Pages
+// Main Pages
 import Therapy from "../views/Therapy.vue";
 import Buddy from "../views/Buddy.vue";
 import About from "../views/About.vue";
 import Chat from "../views/Chat.vue";
 
-// Nested Components Apps
+// Home Nested- Components
 
 import settingsApp from "@/components/Profile/settingsApp.vue";
 import healthStatusApp from "@/components/Profile/healthStatusApp.vue";
@@ -17,16 +17,16 @@ import healthStatusApp from "@/components/Profile/healthStatusApp.vue";
 import aboutDevelopers from "@/components/About/aboutDevelopers.vue";
 import aboutTherapists from "@/components/About/aboutTherapists.vue";
 import aboutVala from "@/components/About/aboutVala.vue";
-import quickSetup from "@/components/About/quickSetup.vue";
 
 // Chat Nested - Components
 import chatApp from "@/components/Chat/chatApp.vue";
 import chatHistory from "@/components/Chat/chatHistory.vue";
 
-// Therapy Components
+// Therapy Nested- Components
 import appointmentOverview from "@/components/Therapy/appointmentOverview.vue";
 import bookAppointments from "@/components/Therapy/bookAppointments.vue";
 
+// Buddy Components
 import buddyApp from "@/components/Buddy/buddyApp.vue";
 import buddySettings from '@/components/Buddy/buddySettings.vue';
 
@@ -101,19 +101,15 @@ const routes = [
         children: [
             {
                 path: "/about",
-                component: aboutDevelopers,
+                component: aboutVala,
             },
             {
                 path: "/aboutTherapists",
                 component: aboutTherapists,
             },
             {
-                path: "/aboutVala",
-                component: aboutVala,
-            },
-            {
-                path: "/quickSetup",
-                component: quickSetup,
+                path: "/aboutDevelopers",
+                component: aboutDevelopers,
             },
         ],
     },

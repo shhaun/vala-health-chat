@@ -1,12 +1,10 @@
 <template>
     <v-app id="app">
         <v-content>
-            <v-container class="fill-height" fluid center>
-                <v-row justify="center">
-                    <transition name="fade" mode="out-in" appear>
-                        <router-view></router-view>
-                    </transition>
-                </v-row>
+            <v-container align-center class="pa-0">
+                <transition name="fade" mode="out-in" appear>
+                    <router-view></router-view>
+                </transition>
             </v-container>
         </v-content>
         <bottomMenu/>

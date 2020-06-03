@@ -3,21 +3,19 @@
         <div class="banner">
             <div class="avatar-banner"></div>
         </div>
-        <v-row>
+        <v-row class="ma-0">
             <v-col>
-                <v-btn rounded small to="/" color="indigo lighten-1">
-                    Health Status
+                <v-btn rounded small to="/" >
+                    Status
                 </v-btn>
             </v-col>
             <v-col>
-                <v-btn rounded small to="/settingsApp" color="indigo lighten-1">
+                <v-btn rounded small to="/settingsApp" >
                     Options
                 </v-btn>
             </v-col>
         </v-row>
-        <v-row>
-            <router-view></router-view>
-        </v-row>
+        <router-view></router-view>
     </div>
 </template>
 
@@ -29,18 +27,19 @@
 
 <style lang="scss">
     .banner {
-        height: 15vh;
+        height: 25vh;
         display: flex;
         justify-content: center;
         z-index: 2;
         background-size: 100% 100%;
         background-image: url(../assets/pictures/wallpaper.png);
     }
+
     .avatar-banner {
         width: 15vh;
         height: 15vh;
         border-radius: 50%;
-        transform: translate(0rem, 3.2rem);
+        transform: translate(0rem, 15vh);
         z-index: 99;
         background-image: url(../assets/pictures/morciak.jpg);
         background-size: 100% 100%;

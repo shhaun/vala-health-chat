@@ -1,19 +1,28 @@
 <template>
     <div class="chatApp">
-        <h1>Chat App</h1>
-        <router-link to="/chat">
-            <button>Chat</button>
-        </router-link>
-        <router-link to="/chatHistory">
-            <button>Chat History</button>
-        </router-link>
-        <router-view></router-view>
-    </div>
 
+        <v-row>
+            <v-col>
+                <v-btn rounded small to="/chat">
+                    Chat
+                </v-btn>
+            </v-col>
+            <v-col>
+                <v-btn rounded small to="/chatHistory">
+                    Chat History
+                </v-btn>
+            </v-col>
+        </v-row>
+        <v-row>
+            <router-view></router-view>
+        </v-row>
+    </div>
 </template>
 
 <script>
     export default {};
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+</style>

@@ -1,11 +1,6 @@
 <template>
-    <div class="buttonAI">
-        <v-row>
-            <h1>Buddy App</h1>
-            <h3>
-                Different images for Buddy here
-            </h3>
-        </v-row>
+    <div class="buddyHome">
+        <router-view></router-view>
     </div>
 </template>
 

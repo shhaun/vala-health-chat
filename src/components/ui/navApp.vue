@@ -1,29 +1,16 @@
 <template>
     <v-bottom-navigation
-            v-model="bottomNav"
+            color="indigo lighten-1"
+            shift
     >
-        <v-btn value="nearby" to="/therapy" >
-            <span>Therapy</span>
-            <v-icon>mdi-heart</v-icon>
+        <v-btn v-for="(navItem, i) in navItems"
+               :key="i"
+               :to="navItem.link">
+            <span>{{ navItem.name }}</span>
+            <br>
+            <v-icon>{{ navItem.icon }}</v-icon>
         </v-btn>
 
-        <v-btn value="nearby" to="/chat">
-            <span>Chat</span>
-            <v-icon>mdi-heart</v-icon>
-        </v-btn>
-
-        <v-btn value="nearby" to="/">
-            <span>Profile</span>
-            <v-icon>mdi-map-marker</v-icon>
-        </v-btn>
-        <v-btn value="nearby" to="/buddy">
-            <span>Buddy</span>
-            <v-icon>mdi-heart</v-icon>
-        </v-btn>
-        <v-btn value="nearby" to="/About">
-            <span>About</span>
-            <v-icon>mdi-heart</v-icon>
-        </v-btn>
     </v-bottom-navigation>
 </template>
 
@@ -31,8 +18,15 @@
     export default {
         data() {
             return {
-                bottomNav: 'recent',
-            }
+                drawer: false,
+                navItems: [
+                    {name: "Therapy", link: "/therapy", icon: "$calendar"},
+                    {name: "Chat", link: "/chat", icon: "$chat"},
+                    {name: "Home", link: "/", icon: "$home"},
+                    {name: "Buddy", link: "/buddy", icon: "$chat"},
+                    {name: "About", link: "/About", icon: "$calendar"},
+                ]
+            };
         },
     }
 </script>

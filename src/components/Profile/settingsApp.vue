@@ -17,10 +17,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.settingsApp {
-  height: 60vh;
-  background-color: rgb(75, 99, 179);
-  display: grid;
-  grid-template-columns: 1fr;
-}
+
 </style>

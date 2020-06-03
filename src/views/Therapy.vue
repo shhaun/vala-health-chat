@@ -1,25 +1,35 @@
 <template>
     <div class="therapyApp">
+        <v-row id="bookingNav" class="ma-0">
+            <v-col>
+                <v-btn class="ma-2" rounded v-for="(navItem, i) in navItems"
+                       :key="i"
+                       :to="navItem.link" small>
+                    <span>{{ navItem.name }}</span>
+                </v-btn>
+            </v-col>
+        </v-row>
         <router-view></router-view>
-            <v-row>
-                <v-col>
-                    <v-btn depressed to="/therapy">Appointment Overview</v-btn>
-                </v-col>
-                <v-col>
-                    <v-btn depressed to="/bookAppointments">
-                        Book Appointments
-                    </v-btn>
-                </v-col>
-            </v-row>
     </div>
 </template>
 
 <script>
     export default {
-        components: {},
+        data() {
+            return {
+                drawer: false,
+                navItems: [
+                    {name: "Appointments", link: "/therapy"},
+                    {name: "Book Appointment", link: "/bookAppointments"},
+                ]
+            };
+        },
     };
 </script>
 
 <style lang="scss" scoped>
+    #bookingNav {
+        background-color: blue
+    }
 
 </style>

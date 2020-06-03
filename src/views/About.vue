@@ -1,24 +1,12 @@
 <template>
     <div class="aboutPage">
-        <v-row class="ma-0">
+        <v-row class="ma-0" align-content="center">
             <v-col>
-                <v-btn rounded small to="/aboutTherapists" color="indigo lighten-1">
-                    About Therapists
-                </v-btn>
-            </v-col>
-            <v-col>
-                <v-btn rounded small to="/aboutVala" color="indigo lighten-1">
-                    About Vala
-                </v-btn>
-            </v-col>
-            <v-col>
-                <v-btn rounded small to="/quickSetup" color="indigo lighten-1">
-                    Quick Setup
-                </v-btn>
-            </v-col>
-            <v-col>
-                <v-btn rounded small to="/quickSetup" color="indigo lighten-1">
-                    About Developers
+                <v-btn class="ma-2"
+                        rounded small v-for="(navItem, i) in navItems"
+                       :key="i"
+                       :to="navItem.link" >
+                    {{ navItem.name }}
                 </v-btn>
             </v-col>
         </v-row>
@@ -28,12 +16,19 @@
 
 <script>
     export default {
-        components: {},
+        data() {
+            return {
+                drawer: false,
+                navItems: [
+                    {name: "About Vala", link: "/about"},
+                    {name: "About Therapists", link: "/aboutTherapists"},
+                    {name: "About Developers", link: "/aboutDevelopers"},
+                ]
+            };
+        },
     };
 </script>
 
 <style lang="scss" scoped>
-    .aboutPage {
-        height: calc(100vh - 75px);
-    }
+
 </style>

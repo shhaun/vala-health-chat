@@ -1,11 +1,8 @@
 <template>
-    <v-container>
-        <div class="quickSetup">
-            <h1>
-                Quick Setup
-            </h1>
-        </div>
-    </v-container>
+    <div class="buddyApp">
+        <h1>Buddy Application</h1>
+        <img class="buddyBody" src="@/assets/Buddy/buddyDefaultState/buddyDefault.png" width="100%">
+    </div>
 
 </template>
 
@@ -14,8 +11,5 @@
 </script>
 
 <style lang="scss" scoped>
-    .quickSetup {
-        color: white;
-        background-color: rgb(84, 84, 204);
-    }
+
 </style>

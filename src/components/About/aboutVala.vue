@@ -1,7 +1,7 @@
 <template>
   <div class="aboutVala">
     <h1>
-      About Vala Health Chat
+      About Vala
     </h1>
   </div>
 </template>
