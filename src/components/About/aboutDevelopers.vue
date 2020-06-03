@@ -66,7 +66,7 @@
 <style lang="scss" scoped>
     .aboutDevelopers {
         color: white;
-        background-color: rgb(84, 84, 204);
+        background-color: #d4d3e0;
         height: 72vh;
     }
 

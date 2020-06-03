@@ -2,8 +2,10 @@
     <div class="homeApp">
         <div class="banner">
             <div class="avatar-banner"></div>
+
         </div>
-        <v-row class="ma-0">
+
+        <v-row id="optionsPanel" class="ma-0">
             <v-col>
                 <v-btn rounded small to="/" >
                     Status
@@ -15,7 +17,11 @@
                 </v-btn>
             </v-col>
         </v-row>
-        <v-row>
+        <v-row class="justify-center ma-0">
+            <div class="userName">Username</div>
+            <div class="nickName">Nickaname</div>
+        </v-row>
+        <v-row class="justify-center ma-0">
             <router-view></router-view>
         </v-row>
     </div>
@@ -45,5 +51,9 @@
         z-index: 99;
         background-image: url("https://i.pinimg.com/564x/e3/dc/c3/e3dcc3179837a8f1696a51319ef86138.jpg");
         background-size: 100% 100%;
+    }
+
+    #optionsPanel {
+        background-color: #d4d3e0;
     }
 </style>

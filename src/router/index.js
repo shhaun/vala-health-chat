@@ -20,7 +20,6 @@ import aboutVala from "@/components/About/aboutVala.vue";
 
 // Chat Nested - Components
 import chatApp from "@/components/Chat/chatApp.vue";
-import chatHistory from "@/components/Chat/chatHistory.vue";
 
 // Therapy Nested- Components
 import appointmentOverview from "@/components/Therapy/appointmentOverview.vue";
@@ -121,10 +120,6 @@ const routes = [
             {
                 path: "/chat",
                 component: chatApp,
-            },
-            {
-                path: "/chatHistory",
-                component: chatHistory,
             },
         ],
     },

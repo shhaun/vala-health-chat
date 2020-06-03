@@ -1,6 +1,8 @@
 <template>
     <div class="therapyApp">
-        <router-view></router-view>
+        <v-row class="justify-center ma-0">
+            <router-view></router-view>
+        </v-row>
     </div>
 </template>
 
@@ -13,8 +15,7 @@
 </script>
 
 <style lang="scss" scoped>
-    #bookingNav {
-        background-color: blue
+    .therapyApp {
+        height: 75vh
     }
-
 </style>
