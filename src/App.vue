@@ -1,9 +1,11 @@
 <template>
-    <v-app id="app">
-        <v-content>
+    <v-app id="app" >
+        <v-content >
+            <v-container class="pa-0" fluid style="max-width: 500px">
                 <transition name="fade" mode="out-in" appear>
                     <router-view></router-view>
                 </transition>
+            </v-container>
         </v-content>
         <bottomMenu/>
     </v-app>
@@ -22,6 +24,9 @@
 </script>
 
 <style lang="scss">
+
+    // App Styling
+
     #app {
         font-family: Avenir, Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
@@ -31,6 +36,7 @@
         background-color: whitesmoke;
     }
 
+    // Page Transition Styling
     .fade-enter-active,
     .fade-leave-active {
         transition: opacity 0.2s;

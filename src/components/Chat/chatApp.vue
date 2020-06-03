@@ -67,7 +67,6 @@
                     {title: 'Mute Mic'},
                     {title: 'Record to Journal'},
                     {title: 'Buddy Assist'}
-
                 ],
             };
         },
