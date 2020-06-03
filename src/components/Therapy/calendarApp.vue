@@ -1,12 +1,12 @@
 <template>
-      <v-sheet height="30vh">
+      <v-sheet height="40vh">
         <v-calendar
                 header-height="5vh"
                 ref="calendar"
                 :now="today"
                 :value="today"
                 :events="events"
-                color="primary"
+                color="rgb(84, 84, 204)"
                 type="week"
         ></v-calendar>
       </v-sheet>

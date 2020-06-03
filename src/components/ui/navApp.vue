@@ -2,6 +2,7 @@
     <v-bottom-navigation
             color="indigo lighten-1"
             shift
+
     >
         <v-btn v-for="(navItem, i) in navItems"
                :key="i"
@@ -10,7 +11,6 @@
             <br>
             <v-icon>{{ navItem.icon }}</v-icon>
         </v-btn>
-
     </v-bottom-navigation>
 </template>
 

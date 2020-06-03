@@ -1,7 +1,5 @@
 <template>
     <div class="bookAppointment">
-        <v-btn rounded depressed color="blue" small>Choose Doctor</v-btn>
-
         <v-col v-for="(doctor, i) in doctors" :key="i" cols="12">
             <v-card>
                 <div class="d-flex flex-no-wrap justify-space-between">
@@ -17,6 +15,33 @@
                 </div>
             </v-card>
         </v-col>
+
+        <v-menu
+                bottom
+                origin="center center"
+                transition="scale-transition" rounded
+        >
+            <template v-slot:activator="{ on }">
+                <v-btn
+                        v-on="on"
+                        rounded depressed small
+                >
+                    Recommended Therapists
+                </v-btn>
+            </template>
+
+            <v-list>
+                <v-list-item
+                        v-for="(doctor, i) in doctors"
+                        :key="i" v-bind:name="doctor.name"
+                >
+                    <v-list-item-title>{{ doctor.name }}</v-list-item-title>
+                    <v-avatar class="ma-3" size="80" tile>
+                        <v-img class="doctorImage" :src="doctor.image"></v-img>
+                    </v-avatar>
+                </v-list-item>
+            </v-list>
+        </v-menu>
         <v-col>
             <v-card class="pa-01" max-width="344" outlined light>
                 <v-list-item-content>
@@ -51,7 +76,19 @@
                         "https://i.pinimg.com/originals/18/e0/1b/18e01b4d31c8ff4c35cefc6518956edf.jpg",
                     name: "Pete Trainor",
                     position: "CEO",
+                }, {
+                    image:
+                        "https://i.pinimg.com/originals/18/e0/1b/18e01b4d31c8ff4c35cefc6518956edf.jpg",
+                    name: "Trinity",
+                    position: "Avenger",
                 },
+                {
+                    image:
+                        "https://i.pinimg.com/originals/18/e0/1b/18e01b4d31c8ff4c35cefc6518956edf.jpg",
+                    name: "John Smith",
+                    position: "NEO",
+                },
+
             ],
             appointmentData: [
                 {
@@ -63,8 +100,8 @@
                     text: "‣ ECG\n" +
                         "    shows sinus rhythm frequency 96, QTc 437 ms., Normal ECG.",
                 },
-
-            ]
+            ],
+            selected: '',
         }),
 
     }

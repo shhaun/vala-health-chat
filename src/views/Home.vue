@@ -15,7 +15,9 @@
                 </v-btn>
             </v-col>
         </v-row>
-        <router-view></router-view>
+        <v-row>
+            <router-view></router-view>
+        </v-row>
     </div>
 </template>
 
@@ -32,7 +34,7 @@
         justify-content: center;
         z-index: 2;
         background-size: 100% 100%;
-        background-image: url(../assets/pictures/wallpaper.png);
+        background-image: url("https://media0.giphy.com/media/xTiN0A1yDc84UV9WZa/giphy.gif?cid=ecf05e476245dbd696d701f53b48fa49f4ceebb665c523b4&rid=giphy.gif");
     }
 
     .avatar-banner {
@@ -41,7 +43,7 @@
         border-radius: 50%;
         transform: translate(0rem, 15vh);
         z-index: 99;
-        background-image: url(../assets/pictures/morciak.jpg);
+        background-image: url("https://i.pinimg.com/564x/e3/dc/c3/e3dcc3179837a8f1696a51319ef86138.jpg");
         background-size: 100% 100%;
     }
 </style>

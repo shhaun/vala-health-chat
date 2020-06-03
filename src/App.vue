@@ -1,7 +1,7 @@
 <template>
     <v-app id="app">
         <v-content>
-            <v-container align-center class="pa-0">
+            <v-container fluid align-center class="pa-0">
                 <transition name="fade" mode="out-in" appear>
                     <router-view></router-view>
                 </transition>

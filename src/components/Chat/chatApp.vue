@@ -1,14 +1,23 @@
 <template>
     <div class="chatApp">
-        <v-row v-for="(messageItem, i) in messageItems"
-               :key="i">
-            <v-col>
-                <h4>{{ messageItem.name }}</h4>
-            </v-col>
-            <v-col>
-                <p>{{ messageItem.text }}</p>
-            </v-col>
-        </v-row>
+            <v-row class="ma-0 align-center">
+                <v-col>
+                    <v-img height="10vh" src="https://i.insider.com/5e78f1961378e37d3200ff19?width=1136&format=jpeg"></v-img>
+                </v-col>
+                <v-col>
+                    <v-img height="10vh" src="https://i.insider.com/5e78f1961378e37d3200ff19?width=1136&format=jpeg"></v-img>
+                </v-col>
+
+            </v-row>
+            <v-row v-for="(messageItem, i) in messageItems"
+                   :key="i">
+                <v-col>
+                    <h4>{{ messageItem.name }}</h4>
+                </v-col>
+                <v-col>
+                    <p>{{ messageItem.text }}</p>
+                </v-col>
+            </v-row>
     </div>
 </template>
 
@@ -16,7 +25,7 @@
     export default {
         data() {
             return {
-                drawer: false,
+                components: {},
                 messageItems: [
                     {
                         name: "Doctor",
@@ -30,18 +39,6 @@
                         name: "Doctor",
                         text: "Alright, splendid - Buddy has been alright too?"
                     },
-                    {
-                        name: "Client",
-                        text: "Yeah! If it wasn't for him, I would of totally have forgot we had an appointment today :D"
-                    },
-                    {
-                        name: "Doctor",
-                        text: "It happens to the best of us. Do you want to save this Session Progress as Progressive?"
-                    },
-                    {
-                        name: "Client",
-                        text: "Yeah sure! Hold on, I'm going to ask Buddy to do so for me"
-                    },
                 ]
             };
         },
@@ -49,8 +46,8 @@
 </script>
 
 <style lang="scss" scoped>
-    .chatApp {
-        height: 50vh;
-    }
+.chatApp {
+    height: calc(85vh - 75px);
+}
 
 </style>

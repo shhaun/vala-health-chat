@@ -2,15 +2,14 @@
     <div class="healthStatusApp">
         <v-row id="healthStats" class="ma-0">
             <v-col class="pa-0">
-                <div id="text">
-                    <p>Here we will input the status update, have a button that is able to adapt depending on what the
-                        users selects</p>
-                </div>
-            </v-col>
-            <v-spacer></v-spacer>
-            <v-col class="pa-0">
                 <p>Mood</p>
             </v-col>
+        </v-row>
+        <v-row class="ma-0 justify-center">
+            <v-btn class="pa-1 ma-1" rounded small v-for="(moodItem, i) in moodItems"
+                   :key="i">
+                {{ moodItem.mood }}
+            </v-btn>
         </v-row>
         <!-- info on the bottom with appointments -->
         <div id="upcoming-appointments"><p>HERE YOU CAN SEE YOUR UPCOMING APPOINTMENTS</p></div>
@@ -20,6 +19,19 @@
 <script>
     export default {
         name: "healthStatusApp",
+        data() {
+            return {
+                drawer: false,
+                moodItems: [
+                    {mood: "Relaxed",},
+                    {mood: "Content",},
+                    {mood: "Productive",},
+                    {mood: "Unmotivated",},
+                    {mood: "Lonely",},
+                    {mood: "Angry",},
+                ]
+            };
+        },
     };
 </script>
 
@@ -35,14 +47,13 @@
 
     #upcoming-appointments {
         color: white;
-        height: 19vh;
+        height: 10vh;
         width: 80%;
         margin-left: 10%;
-        border-radius: 25px;
+        border-radius: 15px;
         box-shadow: 0 5px 5px 0 #fff;
         margin-top: 1vh;
         background: darkslateblue;
         justify-content: center;
-        padding: 50px 0 0 0;
     }
 </style>

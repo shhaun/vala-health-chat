@@ -1,7 +1,7 @@
 <template>
     <div class="aboutPage">
-        <v-row class="ma-0" align-content="center">
-            <v-col>
+        <v-row id="aboutPanel" class="ma-0" align-content="center" >
+            <v-col class="pa-0">
                 <v-btn class="ma-2"
                         rounded small v-for="(navItem, i) in navItems"
                        :key="i"
@@ -30,5 +30,9 @@
 </script>
 
 <style lang="scss" scoped>
+    #aboutPanel {
+        height: 20vh;
+        background-image: url("https://media0.giphy.com/media/xTiN0A1yDc84UV9WZa/giphy.gif?cid=ecf05e476245dbd696d701f53b48fa49f4ceebb665c523b4&rid=giphy.gif");
+    }
 
 </style>
