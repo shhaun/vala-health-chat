@@ -18,8 +18,8 @@
             </v-col>
         </v-row>
         <v-row class="justify-center ma-0">
-            <div class="userName">Username</div>
-            <div class="nickName">Nickaname</div>
+            <div class="userName">Marie</div>
+            <div class="nickName">Slayer Dragon</div>
         </v-row>
         <v-row class="justify-center ma-0">
             <router-view></router-view>

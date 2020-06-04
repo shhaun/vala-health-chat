@@ -76,29 +76,12 @@
                         "https://i.pinimg.com/originals/18/e0/1b/18e01b4d31c8ff4c35cefc6518956edf.jpg",
                     name: "Pete Trainor",
                     position: "CEO",
-                }, {
-                    image:
-                        "https://i.pinimg.com/originals/18/e0/1b/18e01b4d31c8ff4c35cefc6518956edf.jpg",
-                    name: "Trinity",
-                    position: "Avenger",
                 },
-                {
-                    image:
-                        "https://i.pinimg.com/originals/18/e0/1b/18e01b4d31c8ff4c35cefc6518956edf.jpg",
-                    name: "John Smith",
-                    position: "NEO",
-                },
-
             ],
             appointmentData: [
                 {
                     date: "17th June",
                     text: "‣ ECG and blood tests on 20.05.2020 show normal baseline values .",
-                },
-                {
-                    date: "28th June",
-                    text: "‣ ECG\n" +
-                        "    shows sinus rhythm frequency 96, QTc 437 ms., Normal ECG.",
                 },
             ],
             selected: '',
