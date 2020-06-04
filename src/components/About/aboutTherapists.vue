@@ -1,8 +1,8 @@
 <template>
   <div class="aboutTherapists">
-    <h1>
+    <h3>
       About Therapists
-    </h1>
+    </h3>
   </div>
 </template>
 
